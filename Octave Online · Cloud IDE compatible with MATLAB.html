@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://octave-online.net/#cmd=a(2%2C%3A) -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./Octave Online · Cloud IDE compatible with MATLAB_files/publishertag.prebid.js.download"></script>
+
+	<title>Octave Online · Cloud IDE compatible with MATLAB</title>
+
+	<!-- Standard Meta Tags -->
+	<meta name="description" content="">
+	
+	<link rel="icon" type="image/png" sizes="32x32" href="https://octave-online.net/images/logos/favicon_package/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://octave-online.net/images/logos/favicon_package/favicon-16x16.png">
+	<link rel="shortcut icon" href="https://octave-online.net/images/logos/favicon_package/favicon.ico">
+	<meta name="viewport" content="width=device-width">
+	<meta name="theme-color" content="FF4B33">
+
+	<!-- Mobile Config -->
+	<link rel="manifest" href="https://octave-online.net/images/logos/favicon_package/site.webmanifest">
+	<link rel="mask-icon" href="https://octave-online.net/images/logos/favicon_package/safari-pinned-tab.svg" color="FF4B33">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://octave-online.net/images/logos/favicon_package/apple-touch-icon.png">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Octave Online">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="application-name" content="Octave Online">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="images/logos/favicon_package/browserconfig.xml">
+
+	<!-- Others -->
+	<link href="./Octave Online · Cloud IDE compatible with MATLAB_files/fire.css" rel="stylesheet" type="text/css" id="theme">
+	<style type="text/css">
+	[aria-hidden="true"] { display: none !important; }
+	</style>
+	<script async="" type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/prebid.js.download"></script><script async="" type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/cmp2.js.download"></script><script async="" type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/gpt.js.download"></script><script async="" type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/choice.js.download"></script><script type="application/javascript" async="" defer="" src="./Octave Online · Cloud IDE compatible with MATLAB_files/track.js.download"></script><script type="text/javascript" async="" src="./Octave Online · Cloud IDE compatible with MATLAB_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-b3tGrrJFQIPZurcFNV2vrA2u2er9PWPAKHNcMEptlkLhk70c4ZdB0G3jp+CLqqAB"></script><script type="text/javascript">
+  window.oo_enableAds = function() {
+    require(["fuse"]);
+  }
+</script>
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/app" src="./Octave Online · Cloud IDE compatible with MATLAB_files/app.js.download"></script><style></style><style id="ace_editor.css">.ace_editor {
+    position: relative;
+    overflow: hidden;
+    font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+    direction: ltr;
+    text-align: left;
+}
+
+.ace_scroller {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    background-color: inherit;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: text;
+}
+
+.ace_content {
+    position: absolute;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 100%;
+}
+
+.ace_dragging .ace_scroller:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: rgba(250, 250, 250, 0.01);
+    z-index: 1000;
+}
+.ace_dragging.ace_dark .ace_scroller:before{
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.ace_selecting, .ace_selecting * {
+    cursor: text !important;
+}
+
+.ace_gutter {
+    position: absolute;
+    overflow : hidden;
+    width: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    cursor: default;
+    z-index: 4;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.ace_gutter-active-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.ace_scroller.ace_scroll-left {
+    box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;
+}
+
+.ace_gutter-cell {
+    padding-left: 19px;
+    padding-right: 6px;
+    background-repeat: no-repeat;
+}
+
+.ace_gutter-cell.ace_error {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    background-position: 2px center;
+}
+
+.ace_gutter-cell.ace_warning {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");
+    background-position: 2px center;
+}
+
+.ace_gutter-cell.ace_info {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");
+    background-position: 2px center;
+}
+.ace_dark .ace_gutter-cell.ace_info {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");
+}
+
+.ace_scrollbar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 6;
+}
+
+.ace_scrollbar-inner {
+    position: absolute;
+    cursor: text;
+    left: 0;
+    top: 0;
+}
+
+.ace_scrollbar-v{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 0;
+}
+
+.ace_scrollbar-h {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    left: 0;
+}
+
+.ace_print-margin {
+    position: absolute;
+    height: 100%;
+}
+
+.ace_text-input {
+    position: absolute;
+    z-index: 0;
+    width: 0.5em;
+    height: 1em;
+    opacity: 0;
+    background: transparent;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    font: inherit;
+    padding: 0 1px;
+    margin: 0 -1px;
+    text-indent: -1em;
+    -ms-user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+    /*with `pre-line` chrome inserts &nbsp; instead of space*/
+    white-space: pre!important;
+}
+
+.ace_text-input.ace_composition {
+    background: inherit;
+    color: inherit;
+    z-index: 1000;
+    opacity: 1;
+    text-indent: 0;
+}
+
+.ace_layer {
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    /* workaround for chrome bug https://github.com/ajaxorg/ace/issues/2312*/
+    word-wrap: normal;
+    white-space: pre;
+    height: 100%;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* setting pointer-events: auto; on node under the mouse, which changes
+        during scroll, will break mouse wheel scrolling in Safari */
+    pointer-events: none;
+}
+
+.ace_gutter-layer {
+    position: relative;
+    width: auto;
+    text-align: right;
+    pointer-events: auto;
+}
+
+.ace_text-layer {
+    font: inherit !important;
+}
+
+.ace_cjk {
+    display: inline-block;
+    text-align: center;
+}
+
+.ace_cursor-layer {
+    z-index: 4;
+}
+
+.ace_cursor {
+    z-index: 4;
+    position: absolute;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-left: 2px solid;
+    /* workaround for smooth cursor repaintng whole screen in chrome */
+    transform: translatez(0);
+}
+
+.ace_slim-cursors .ace_cursor {
+    border-left-width: 1px;
+}
+
+.ace_overwrite-cursors .ace_cursor {
+    border-left-width: 0;
+    border-bottom: 1px solid;
+}
+
+.ace_hidden-cursors .ace_cursor {
+    opacity: 0.2;
+}
+
+.ace_smooth-blinking .ace_cursor {
+    -webkit-transition: opacity 0.18s;
+            transition: opacity 0.18s;
+}
+
+.ace_editor.ace_multiselect .ace_cursor {
+    border-left-width: 1px;
+}
+
+.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {
+    position: absolute;
+    z-index: 3;
+}
+
+.ace_marker-layer .ace_selection {
+    position: absolute;
+    z-index: 5;
+}
+
+.ace_marker-layer .ace_bracket {
+    position: absolute;
+    z-index: 6;
+}
+
+.ace_marker-layer .ace_active-line {
+    position: absolute;
+    z-index: 2;
+}
+
+.ace_marker-layer .ace_selected-word {
+    position: absolute;
+    z-index: 4;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ace_line .ace_fold {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    display: inline-block;
+    height: 11px;
+    margin-top: -2px;
+    vertical-align: middle;
+
+    background-image:
+        url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),
+        url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");
+    background-repeat: no-repeat, repeat-x;
+    background-position: center center, top left;
+    color: transparent;
+
+    border: 1px solid black;
+    border-radius: 2px;
+
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.ace_dark .ace_fold {
+}
+
+.ace_fold:hover{
+    background-image:
+        url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),
+        url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");
+}
+
+.ace_tooltip {
+    background-color: #FFF;
+    background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));
+    border: 1px solid gray;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    color: black;
+    max-width: 100%;
+    padding: 3px 4px;
+    position: fixed;
+    z-index: 999999;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: default;
+    white-space: pre;
+    word-wrap: break-word;
+    line-height: normal;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    pointer-events: none;
+}
+
+.ace_folding-enabled > .ace_gutter-cell {
+    padding-right: 13px;
+}
+
+.ace_fold-widget {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    margin: 0 -12px 0 1px;
+    display: none;
+    width: 11px;
+    vertical-align: top;
+
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 3px;
+    
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.ace_folding-enabled .ace_fold-widget {
+    display: inline-block;   
+}
+
+.ace_fold-widget.ace_end {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");
+}
+
+.ace_fold-widget.ace_closed {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");
+}
+
+.ace_fold-widget:hover {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.ace_fold-widget:active {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+/**
+ * Dark version for fold widgets
+ */
+.ace_dark .ace_fold-widget {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");
+}
+.ace_dark .ace_fold-widget.ace_end {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");
+}
+.ace_dark .ace_fold-widget.ace_closed {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");
+}
+.ace_dark .ace_fold-widget:hover {
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.ace_dark .ace_fold-widget:active {
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.ace_fold-widget.ace_invalid {
+    background-color: #FFB4B4;
+    border-color: #DE5555;
+}
+
+.ace_fade-fold-widgets .ace_fold-widget {
+    -webkit-transition: opacity 0.4s ease 0.05s;
+            transition: opacity 0.4s ease 0.05s;
+    opacity: 0;
+}
+
+.ace_fade-fold-widgets:hover .ace_fold-widget {
+    -webkit-transition: opacity 0.05s ease 0.05s;
+            transition: opacity 0.05s ease 0.05s;
+    opacity:1;
+}
+
+.ace_underline {
+    text-decoration: underline;
+}
+
+.ace_bold {
+    font-weight: bold;
+}
+
+.ace_nobold .ace_bold {
+    font-weight: normal;
+}
+
+.ace_italic {
+    font-style: italic;
+}
+
+
+.ace_error-marker {
+    background-color: rgba(255, 0, 0,0.2);
+    position: absolute;
+    z-index: 9;
+}
+
+.ace_highlight-marker {
+    background-color: rgba(255, 255, 0,0.2);
+    position: absolute;
+    z-index: 8;
+}
+
+/*
+styles = []
+for (var i = 1; i < 16; i++) {
+    styles.push(".ace_br" + i + "{" + (
+        ["top-left", "top-right", "bottom-right", "bottom-left"]
+    ).map(function(x, j) {
+        return i & (1<<j) ? "border-" + x + "-radius: 3px;" : "" 
+    }).filter(Boolean).join(" ") + "}")
+}
+styles.join("\n")
+*/
+.ace_br1 {border-top-left-radius    : 3px;}
+.ace_br2 {border-top-right-radius   : 3px;}
+.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}
+.ace_br4 {border-bottom-right-radius: 3px;}
+.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}
+.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}
+.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}
+.ace_br8 {border-bottom-left-radius : 3px;}
+.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}
+.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}
+.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}
+.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}
+.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}
+.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}
+.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}
+
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.ace-tm .ace_print-margin {
+  width: 1px;
+  background: #e8e8e8;
+}
+
+.ace-tm .ace_fold {
+    background-color: #6B72E6;
+}
+
+.ace-tm {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.ace-tm .ace_cursor {
+  color: black;
+}
+        
+.ace-tm .ace_invisible {
+  color: rgb(191, 191, 191);
+}
+
+.ace-tm .ace_storage,
+.ace-tm .ace_keyword {
+  color: blue;
+}
+
+.ace-tm .ace_constant {
+  color: rgb(197, 6, 11);
+}
+
+.ace-tm .ace_constant.ace_buildin {
+  color: rgb(88, 72, 246);
+}
+
+.ace-tm .ace_constant.ace_language {
+  color: rgb(88, 92, 246);
+}
+
+.ace-tm .ace_constant.ace_library {
+  color: rgb(6, 150, 14);
+}
+
+.ace-tm .ace_invalid {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: red;
+}
+
+.ace-tm .ace_support.ace_function {
+  color: rgb(60, 76, 114);
+}
+
+.ace-tm .ace_support.ace_constant {
+  color: rgb(6, 150, 14);
+}
+
+.ace-tm .ace_support.ace_type,
+.ace-tm .ace_support.ace_class {
+  color: rgb(109, 121, 222);
+}
+
+.ace-tm .ace_keyword.ace_operator {
+  color: rgb(104, 118, 135);
+}
+
+.ace-tm .ace_string {
+  color: rgb(3, 106, 7);
+}
+
+.ace-tm .ace_comment {
+  color: rgb(76, 136, 107);
+}
+
+.ace-tm .ace_comment.ace_doc {
+  color: rgb(0, 102, 255);
+}
+
+.ace-tm .ace_comment.ace_doc.ace_tag {
+  color: rgb(128, 159, 191);
+}
+
+.ace-tm .ace_constant.ace_numeric {
+  color: rgb(0, 0, 205);
+}
+
+.ace-tm .ace_variable {
+  color: rgb(49, 132, 149);
+}
+
+.ace-tm .ace_xml-pe {
+  color: rgb(104, 104, 91);
+}
+
+.ace-tm .ace_entity.ace_name.ace_function {
+  color: #0000A2;
+}
+
+
+.ace-tm .ace_heading {
+  color: rgb(12, 7, 255);
+}
+
+.ace-tm .ace_list {
+  color:rgb(185, 6, 144);
+}
+
+.ace-tm .ace_meta.ace_tag {
+  color:rgb(0, 22, 142);
+}
+
+.ace-tm .ace_string.ace_regex {
+  color: rgb(255, 0, 0)
+}
+
+.ace-tm .ace_marker-layer .ace_selection {
+  background: rgb(181, 213, 255);
+}
+.ace-tm.ace_multiselect .ace_selection.ace_start {
+  box-shadow: 0 0 3px 0px white;
+}
+.ace-tm .ace_marker-layer .ace_step {
+  background: rgb(252, 255, 0);
+}
+
+.ace-tm .ace_marker-layer .ace_stack {
+  background: rgb(164, 229, 101);
+}
+
+.ace-tm .ace_marker-layer .ace_bracket {
+  margin: -1px 0 0 -1px;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.ace-tm .ace_marker-layer .ace_active-line {
+  background: rgba(0, 0, 0, 0.07);
+}
+
+.ace-tm .ace_gutter-active-line {
+    background-color : #dcdcdc;
+}
+
+.ace-tm .ace_marker-layer .ace_selected-word {
+  background: rgb(250, 250, 255);
+  border: 1px solid rgb(200, 200, 250);
+}
+
+.ace-tm .ace_indent-guide {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;
+}
+
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style id="ace-crimson-editor">.ace-crimson-editor .ace_gutter {
+  background: #ebebeb;
+  color: #333;
+  overflow : hidden;
+}
+
+.ace-crimson-editor .ace_gutter-layer {
+  width: 100%;
+  text-align: right;
+}
+
+.ace-crimson-editor .ace_print-margin {
+  width: 1px;
+  background: #e8e8e8;
+}
+
+.ace-crimson-editor {
+  background-color: #FFFFFF;
+  color: rgb(64, 64, 64);
+}
+
+.ace-crimson-editor .ace_cursor {
+  color: black;
+}
+
+.ace-crimson-editor .ace_invisible {
+  color: rgb(191, 191, 191);
+}
+
+.ace-crimson-editor .ace_identifier {
+  color: black;
+}
+
+.ace-crimson-editor .ace_keyword {
+  color: blue;
+}
+
+.ace-crimson-editor .ace_constant.ace_buildin {
+  color: rgb(88, 72, 246);
+}
+
+.ace-crimson-editor .ace_constant.ace_language {
+  color: rgb(255, 156, 0);
+}
+
+.ace-crimson-editor .ace_constant.ace_library {
+  color: rgb(6, 150, 14);
+}
+
+.ace-crimson-editor .ace_invalid {
+  text-decoration: line-through;
+  color: rgb(224, 0, 0);
+}
+
+.ace-crimson-editor .ace_fold {
+}
+
+.ace-crimson-editor .ace_support.ace_function {
+  color: rgb(192, 0, 0);
+}
+
+.ace-crimson-editor .ace_support.ace_constant {
+  color: rgb(6, 150, 14);
+}
+
+.ace-crimson-editor .ace_support.ace_type,
+.ace-crimson-editor .ace_support.ace_class {
+  color: rgb(109, 121, 222);
+}
+
+.ace-crimson-editor .ace_keyword.ace_operator {
+  color: rgb(49, 132, 149);
+}
+
+.ace-crimson-editor .ace_string {
+  color: rgb(128, 0, 128);
+}
+
+.ace-crimson-editor .ace_comment {
+  color: rgb(76, 136, 107);
+}
+
+.ace-crimson-editor .ace_comment.ace_doc {
+  color: rgb(0, 102, 255);
+}
+
+.ace-crimson-editor .ace_comment.ace_doc.ace_tag {
+  color: rgb(128, 159, 191);
+}
+
+.ace-crimson-editor .ace_constant.ace_numeric {
+  color: rgb(0, 0, 64);
+}
+
+.ace-crimson-editor .ace_variable {
+  color: rgb(0, 64, 128);
+}
+
+.ace-crimson-editor .ace_xml-pe {
+  color: rgb(104, 104, 91);
+}
+
+.ace-crimson-editor .ace_marker-layer .ace_selection {
+  background: rgb(181, 213, 255);
+}
+
+.ace-crimson-editor .ace_marker-layer .ace_step {
+  background: rgb(252, 255, 0);
+}
+
+.ace-crimson-editor .ace_marker-layer .ace_stack {
+  background: rgb(164, 229, 101);
+}
+
+.ace-crimson-editor .ace_marker-layer .ace_bracket {
+  margin: -1px 0 0 -1px;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.ace-crimson-editor .ace_marker-layer .ace_active-line {
+  background: rgb(232, 242, 254);
+}
+
+.ace-crimson-editor .ace_gutter-active-line {
+    background-color : #dcdcdc;
+}
+
+.ace-crimson-editor .ace_meta.ace_tag {
+  color:rgb(28, 2, 255);
+}
+
+.ace-crimson-editor .ace_marker-layer .ace_selected-word {
+  background: rgb(250, 250, 255);
+  border: 1px solid rgb(200, 200, 250);
+}
+
+.ace-crimson-editor .ace_string.ace_regex {
+  color: rgb(192, 0, 192);
+}
+
+.ace-crimson-editor .ace_indent-guide {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;
+}
+/*# sourceURL=ace/css/ace-crimson-editor */</style><style id="ace-merbivore-soft">.ace-merbivore-soft .ace_gutter {
+  background: #262424;
+  color: #E6E1DC
+}
+
+.ace-merbivore-soft .ace_print-margin {
+  width: 1px;
+  background: #262424
+}
+
+.ace-merbivore-soft {
+  background-color: #1C1C1C;
+  color: #E6E1DC
+}
+
+.ace-merbivore-soft .ace_cursor {
+  color: #FFFFFF
+}
+
+.ace-merbivore-soft .ace_marker-layer .ace_selection {
+  background: #494949
+}
+
+.ace-merbivore-soft.ace_multiselect .ace_selection.ace_start {
+  box-shadow: 0 0 3px 0px #1C1C1C;
+}
+
+.ace-merbivore-soft .ace_marker-layer .ace_step {
+  background: rgb(102, 82, 0)
+}
+
+.ace-merbivore-soft .ace_marker-layer .ace_bracket {
+  margin: -1px 0 0 -1px;
+  border: 1px solid #404040
+}
+
+.ace-merbivore-soft .ace_marker-layer .ace_active-line {
+  background: #333435
+}
+
+.ace-merbivore-soft .ace_gutter-active-line {
+  background-color: #333435
+}
+
+.ace-merbivore-soft .ace_marker-layer .ace_selected-word {
+  border: 1px solid #494949
+}
+
+.ace-merbivore-soft .ace_invisible {
+  color: #404040
+}
+
+.ace-merbivore-soft .ace_entity.ace_name.ace_tag,
+.ace-merbivore-soft .ace_keyword,
+.ace-merbivore-soft .ace_meta,
+.ace-merbivore-soft .ace_meta.ace_tag,
+.ace-merbivore-soft .ace_storage {
+  color: #FC803A
+}
+
+.ace-merbivore-soft .ace_constant,
+.ace-merbivore-soft .ace_constant.ace_character,
+.ace-merbivore-soft .ace_constant.ace_character.ace_escape,
+.ace-merbivore-soft .ace_constant.ace_other,
+.ace-merbivore-soft .ace_support.ace_type {
+  color: #68C1D8
+}
+
+.ace-merbivore-soft .ace_constant.ace_character.ace_escape {
+  color: #B3E5B4
+}
+
+.ace-merbivore-soft .ace_constant.ace_language {
+  color: #E1C582
+}
+
+.ace-merbivore-soft .ace_constant.ace_library,
+.ace-merbivore-soft .ace_string,
+.ace-merbivore-soft .ace_support.ace_constant {
+  color: #8EC65F
+}
+
+.ace-merbivore-soft .ace_constant.ace_numeric {
+  color: #7FC578
+}
+
+.ace-merbivore-soft .ace_invalid,
+.ace-merbivore-soft .ace_invalid.ace_deprecated {
+  color: #FFFFFF;
+  background-color: #FE3838
+}
+
+.ace-merbivore-soft .ace_fold {
+  background-color: #FC803A;
+  border-color: #E6E1DC
+}
+
+.ace-merbivore-soft .ace_comment,
+.ace-merbivore-soft .ace_meta {
+  font-style: italic;
+  color: #AC4BB8
+}
+
+.ace-merbivore-soft .ace_entity.ace_other.ace_attribute-name {
+  color: #EAF1A3
+}
+
+.ace-merbivore-soft .ace_indent-guide {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWOQkpLyZfD09PwPAAfYAnaStpHRAAAAAElFTkSuQmCC) right repeat-y
+}
+/*# sourceURL=ace/css/ace-merbivore-soft */</style><style>.ace_snippet-marker {    -moz-box-sizing: border-box;    box-sizing: border-box;    background: rgba(194, 193, 208, 0.09);    border: 1px dotted rgba(211, 208, 235, 0.62);    position: absolute;}</style><style>.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {    background-color: #CAD6FA;    z-index: 1;}.ace_editor.ace_autocomplete .ace_line-hover {    border: 1px solid #abbffe;    margin-top: -1px;    background: rgba(233,233,253,0.4);}.ace_editor.ace_autocomplete .ace_line-hover {    position: absolute;    z-index: 2;}.ace_editor.ace_autocomplete .ace_scroller {   background: none;   border: none;   box-shadow: none;}.ace_rightAlignedText {    color: gray;    display: inline-block;    position: absolute;    right: 4px;    text-align: right;    z-index: -1;}.ace_editor.ace_autocomplete .ace_completion-highlight{    color: #000;    text-shadow: 0 0 0.01em;}.ace_editor.ace_autocomplete {    width: 280px;    z-index: 200000;    background: #fbfbfb;    color: #444;    border: 1px lightgray solid;    position: fixed;    box-shadow: 2px 3px 5px rgba(0,0,0,.2);    line-height: 1.4;}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/runtime" src="./Octave Online · Cloud IDE compatible with MATLAB_files/runtime.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics" src="./Octave Online · Cloud IDE compatible with MATLAB_files/analytics.js.download"></script><link type="text/css" rel="stylesheet" href="./Octave Online · Cloud IDE compatible with MATLAB_files/stylesheet.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="recaptcha" src="./Octave Online · Cloud IDE compatible with MATLAB_files/api.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uservoice" src="./Octave Online · Cloud IDE compatible with MATLAB_files/5fPlQ3CsHcjp8LVE8dAeA.js.download"></script><style type="text/css" media="screen">.uv-icon{box-sizing:border-box;display:inline-block;cursor:pointer;position:relative;transition:all 300ms;width:39px;height:39px;position:fixed;z-index:100002;opacity:0.8;transition:opacity 100ms}.uv-icon.uv-bottom-right{bottom:10px;right:12px}.uv-icon.uv-top-right{top:10px;right:12px}.uv-icon.uv-bottom-left{bottom:10px;left:12px}.uv-icon.uv-top-left{top:10px;left:12px}.uv-icon.uv-is-selected{opacity:1}.uv-icon svg{width:39px;height:39px}.uv-icon .uv-tooltip-container{position:relative}.uv-icon .uv-tooltip-container .uv-icon-tooltip{display:none;position:absolute;height:20px;padding:4px 8px;background-color:#464653;color:white;font-size:12px;border-radius:4px;line-height:18px;font-family:"Open Sans", sans-serif;white-space:nowrap}.uv-icon .uv-tooltip-container .uv-icon-tooltip.left,.uv-icon .uv-tooltip-container .uv-icon-tooltip.right{top:0;bottom:0;margin:auto 10px}.uv-icon .uv-tooltip-container .uv-icon-tooltip.top,.uv-icon .uv-tooltip-container .uv-icon-tooltip.bottom{transform:translate(-30%);margin:10px auto}.uv-icon .uv-tooltip-container .uv-icon-tooltip.top{bottom:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.bottom{top:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.left{right:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.right{left:100%}.uv-icon .uv-tooltip-container:hover .uv-icon-tooltip{display:block}.uv-icon-trigger{display:block;width:39px;height:39px;border:none;padding:0;cursor:pointer;background:none}.uv-popover{font-family:sans-serif;font-weight:100;font-size:13px;color:black;position:fixed;z-index:100001}.uv-popover-content{border-radius:5px;background:white;border:1px solid transparent;position:relative;width:325px;height:325px;transition:background 200ms}.uv-bottom .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-top .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-left .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-right .uv-popover-content{box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-ie8 .uv-popover-content{position:relative}.uv-ie8 .uv-popover-content .uv-popover-content-shadow{display:block;background:black;content:'';position:absolute;left:-15px;top:-15px;width:100%;height:100%;filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=15,MakeShadow=true,ShadowOpacity=0.30);z-index:-1}.uv-popover-tail{border:9px solid transparent;width:0;z-index:10;position:absolute;transition:border-top-color 200ms}.uv-top .uv-popover-tail{bottom:-20px;border-top:11px solid white}.uv-bottom .uv-popover-tail{top:-20px;border-bottom:11px solid white}.uv-left .uv-popover-tail{right:-20px;border-left:11px solid white}.uv-right .uv-popover-tail{left:-20px;border-right:11px solid white}.uv-popover-loading{background:white;border-radius:5px;position:absolute;width:100%;height:100%;left:0;top:0}.uv-popover-loading-text{position:absolute;top:50%;margin-top:-0.5em;width:100%;text-align:center}.uv-popover-iframe-container{height:100%}.uv-popover-iframe{border-radius:5px;overflow:hidden}.uv-is-hidden{display:none}.uv-is-invisible{display:block !important;visibility:hidden !important}.uv-is-transitioning{display:block !important}.uv-no-transition{transition:none !important}.uv-fade{opacity:1;transition:opacity 200ms ease-out}.uv-fade.uv-is-hidden{opacity:0}.uv-scale-top,.uv-scale-top-left,.uv-scale-top-right,.uv-scale-bottom,.uv-scale-bottom-left,.uv-scale-bottom-right,.uv-scale-right,.uv-scale-right-top,.uv-scale-right-bottom,.uv-scale-left,.uv-scale-left-top,.uv-scale-left-bottom,.uv-slide-top,.uv-slide-bottom,.uv-slide-left,.uv-slide-right{opacity:1;transition:all 80ms ease-out}.uv-scale-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%)}.uv-scale-top-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%) translateX(-10%)}.uv-scale-top-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%) translateX(10%)}.uv-scale-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%)}.uv-scale-bottom-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%) translateX(-10%)}.uv-scale-bottom-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%) translateX(10%)}.uv-scale-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%)}.uv-scale-right-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%) translateY(-10%)}.uv-scale-right-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%) translateY(10%)}.uv-scale-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%)}.uv-scale-left-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%) translateY(-10%)}.uv-scale-left-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%) translateY(10%)}.uv-slide-top.uv-is-hidden{transform:translateY(-100%)}.uv-slide-bottom.uv-is-hidden{transform:translateY(100%)}.uv-slide-left.uv-is-hidden{transform:translateX(-100%)}.uv-slide-right.uv-is-hidden{transform:translateX(100%)}
+</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="fuse" src="./Octave Online · Cloud IDE compatible with MATLAB_files/fuse.js.download"></script><meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/OOU4XAFfeAV4kM4+W9WBwNAHqq/bvtrRcJ1wpnNyO/i076BSUy1d14l2kBEgVmEuvxojSpD23172C6hBg2AQYAAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjM0MDgzMTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AwrB+XVH/KV6HfZNVtSEqlUJi3yUbtCp0/TJRj+38NDIw19/9P1h7ECTtdLdhIzG0Bsl4n/0rVmttJtGUCcewgAAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjM0MDgzMTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="Ax15QOERqai2A5XWrDY38Eg07xh2T0pkhpDPJuDlxr7D2Ka8wHvklgK7tTPZOnT+8H31lwHto5JpvYV8jRn1WgIAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjM0MDgzMTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><script src="./Octave Online · Cloud IDE compatible with MATLAB_files/pubads_impl_2021102501.js.download" async=""></script><style type="text/css"> .qc-cmp-button.qc-cmp-secondary-button:hover {    background-color: #368bd6 !important;    border-color: transparent !important;  }  .qc-cmp-button.qc-cmp-secondary-button:hover {    color: #ffffff !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    color: #368bd6 !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    background-color: #eee !important;    border-color: transparent !important;  } .qc-cmp-qc-link #qcLogo { display: none;}.qc-cmp-link-text { margin: 1em 0; display: none;}</style><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(4).txt"></script><link rel="preload" href="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt" as="script"><script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/f(5).txt"></script></head>
+<body data-sanscons-color="black">
+<div id="abox">
+	<div id="abox_default" class="abox_content" data-bind="click: showUpgradeTier">
+		Do your part: support Free Software by contributing US$3/mo.
+	</div>
+	<style type="text/css">
+#abox { display: block; }
+.abox_fuse { background-color: inherit; }
+.fuse-slot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: inherit;
+}
+.abox_content { width: 300px; height: 100px; }
+#abox { width: 100%; height: 100px; }
+#main { top: 100px; right: 0; }
+@media (min-width: 468px) {
+  .abox_content { width: 468px; height: 60px; }
+  #abox { width: 100%; height: 60px; }
+  #main { top: 60px; right: 0; }
+}
+@media (min-width: 728px) {
+  .abox_content { width: 728px; height: 90px; }
+  #abox { width: 100%; height: 90px; }
+  #main { top: 90px; right: 0; }
+}
+@media (min-width: 970px) {
+  .abox_content { width: 970px; height: 90px; }
+  #abox { width: 100%; height: 90px; }
+  #main { top: 90px; right: 0; }
+}
+@media (min-width: 1200px) {
+  .abox_content { width: 160px; height: 600px; }
+  #abox { width: 160px; height: 100%; }
+  #main { top: 0; right: 160px; }
+}
+@media (min-width: 1800px) {
+  .abox_content { width: 300px; height: 600px; }
+  #abox { width: 300px; height: 100%; }
+  #main { top: 0; right: 300px; }
+}
+@media (min-width: 1800px) and (min-height: 910px) {
+  .abox_content { width: 300px; height: 900px; }
+  #abox { width: 300px; height: 100%; }
+  #main { top: 0; right: 300px; }
+}
+</style>
+<!-- 71161633/rhs_vrec/rhs_vrec -->
+<div data-fuse="22339278103" class="abox_fuse" data-fuse-code="fuse-slot-22339278103-1" data-fuse-slot="/71161633,22201677130/OCTOL_octaveonline/rhs_vrec"><div id="fuse-slot-22339278103-1" class="fuse-slot" data-google-query-id="CPH63vSJ8PMCFRDM1QodDMADDg" style=""><div id="google_ads_iframe_/71161633,22201677130/OCTOL_octaveonline/rhs_vrec_0__container__" style="border: 0pt none; margin: auto; text-align: center; width: 160px; height: 600px;"><iframe frameborder="0" src="./Octave Online · Cloud IDE compatible with MATLAB_files/container.html" id="google_ads_iframe_/71161633,22201677130/OCTOL_octaveonline/rhs_vrec_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="160" height="600" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div></div>
+<!-- 71161633/sticky_header/sticky_header -->
+<div data-fuse="22339278106" class="abox_fuse" data-fuse-code="fuse-slot-22339278106-1" data-fuse-slot="/71161633,22201677130/OCTOL_octaveonline/sticky_header"><div id="fuse-slot-22339278106-1" class="fuse-slot" style="display: none;"></div></div>
+</div>
+<div id="main">
+<div id="flexbox">
+	<header>
+		<h1>
+			<img alt="Octave Online" src="./Octave Online · Cloud IDE compatible with MATLAB_files/banner-black.svg" data-bind="attr: { src: logoSrc }">
+		</h1>
+		<!-- ko if: extraHeaderText --><!-- /ko -->
+		<div class="hamburger is-active" id="hamburger" aria-label="Menu" role="button" aria-controls="navigation">
+			<div class="hamburger-box">
+				<span class="hamburger-memo">MENU</span>
+				<div class="hamburger-inner"></div>
+			</div>
+		</div>
+	</header>
+	<section data-hover="flex">
+		<div id="files_container" aria-hidden="false" data-bind="resizeFlex:{ group: flex.sizes, index: 0 }">
+			<div id="files_toolbar" class="theme-header">
+				Files
+				<!-- ko if: purpose() !== "bucket" -->
+				<span id="files_toolbar_create" title="Create empty file"></span>
+				<!-- /ko -->
+			</div>
+			<!-- ko if: purpose() !== "bucket" -->
+			<div id="files_toolbar_lower">
+				<span id="files_toolbar_upload" title="Upload file"></span>
+				<span id="files_toolbar_refresh" title="Refresh files"></span>
+				<span id="files_toolbar_info" title="File version history"></span>
+			</div>
+			<!-- /ko -->
+			<div id="files_list_container" data-bind="css: { &#39;is_bucket&#39;: purpose() === &#39;bucket&#39; }">
+				<ul data-bind="foreach: files"></ul>
+				<!-- ko if: purpose() !== "bucket" -->
+				<span id="files_drop_notification">
+					Drop Files Here to Upload
+				</span>
+				<!-- /ko -->
+			</div>
+		</div>
+		<div id="open_container" aria-hidden="false" data-bind="resizeFlex:{ group: flex.sizes, index: 1 }" style="flex-basis: 352px;">
+			<!-- ko with: openFile --><!-- /ko -->
+			<!-- ko ifnot: openFile -->
+				<div class="editor_nofile fullheight">
+					<h2>
+						Tips &amp; Tricks
+					</h2>
+					<!-- ko if: purpose() !== "bucket" -->
+					<p>
+						The files you make on Octave Online will be saved for the next time you visit. They will be deleted after 6 months of inactivity.
+					</p>
+					<!-- /ko -->
+					<h3>
+						Keyboard Shortcuts
+					</h3>
+					<p>
+						Common shortcuts:
+					</p>
+					<dl>
+						<dt>Ctrl + Space</dt>
+						<dd>Show the auto-completion menu</dd>
+						<dt>Cmd/Ctrl + S</dt>
+						<dd>Save the file</dd>
+						<dt>Cmd/Ctrl/Win + R</dt>
+						<dd>Run the file</dd>
+						<dt>Cmd/Ctrl/Win + E</dt>
+						<dd>Set focus to the prompt</dd>
+					</dl>
+					<p>
+						<a href="https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts#default-keyboard-shortcuts" target="_blank"><strong>Full List</strong></a>
+					</p>
+				</div>
+			<!-- /ko -->
+		<div class="handle" aria-hidden="false"></div></div>
+		<div id="output_panel" data-bind="attr:{ style: flex.outputCss }" style="flex-basis:448px">
+			<div id="plot_container" aria-hidden="true" data-bind="vizSafe: showPlot, with: currentPlot"></div>
+			<div id="vars_console_container" data-hover="flex">
+				<div id="vars_panel" aria-hidden="false" data-bind="resizeFlex:{ group: flex.sizes, index: 2 }" style="flex-basis: 111px;">
+					<div class="theme-header">
+						Vars
+					</div>
+					<div id="vars_content">
+						<ul data-bind="foreach: vars">
+							<li data-bind="click: showDetails, attr: { title: typeExplanation }, flash: value" title="matrix" class="transition-property-bgcolor transition-duration-medium" dummy-attribute="[-7, 5, -9; 2, -1, 2; 1, -1, 2]">
+								<span class="vars_type" data-bind="text: typeString">[3x3]</span>
+								<span class="vars_symb" data-bind="text: symbol">a</span>
+							</li>
+						
+							<li data-bind="click: showDetails, attr: { title: typeExplanation }, flash: value" title="matrix" class="transition-property-bgcolor transition-duration-medium" dummy-attribute="[-7, 5, -9]">
+								<span class="vars_type" data-bind="text: typeString">[1x3]</span>
+								<span class="vars_symb" data-bind="text: symbol">ans</span>
+							</li>
+						
+							<li data-bind="click: showDetails, attr: { title: typeExplanation }, flash: value" title="matrix" class="transition-property-bgcolor transition-duration-medium" dummy-attribute="[16, 3, 2, 13; 5, 10, 11, 8; 9, 6">
+								<span class="vars_type" data-bind="text: typeString">[4x4]</span>
+								<span class="vars_symb" data-bind="text: symbol">b</span>
+							</li>
+						
+							<li data-bind="click: showDetails, attr: { title: typeExplanation }, flash: value" title="matrix" class="transition-property-bgcolor transition-duration-medium" dummy-attribute="[4, 2, -3; 7, -7, 9; 3, -5, 6]">
+								<span class="vars_type" data-bind="text: typeString">[3x3]</span>
+								<span class="vars_symb" data-bind="text: symbol">c</span>
+							</li>
+						
+							<li data-bind="click: showDetails, attr: { title: typeExplanation }, flash: value" title="matrix" class="transition-property-bgcolor transition-duration-medium" dummy-attribute="[6, 3, 2; 2, 12, -7; -1, 6, 2; -5">
+								<span class="vars_type" data-bind="text: typeString">[4x3]</span>
+								<span class="vars_symb" data-bind="text: symbol">d</span>
+							</li>
+						</ul>
+					</div>
+				<div class="handle" aria-hidden="false"></div></div>
+				<div id="console_container" data-bind="resizeFlex:{ group: flex.sizes, index: 3 }" style="flex-basis: 337px;">
+					<div id="console_output_container">
+						<pre id="console" data-bind="css: { &#39;console-wrap&#39;: consoleWhiteSpaceWrap }" class="console-wrap"><span class="prompt_row">octave:1&gt; </span><span class="prompt_command">a=[-7 5 -9;2 -1 2;1 -1 2]</span>
+a =
+
+  -7   5  -9
+   2  -1   2
+   1  -1   2
+
+<span class="prompt_row">octave:2&gt; </span><span class="prompt_command">b=[16 3 2 13;5 10 11 8;9 6 7 12;4 15 14 1]</span>
+b =
+
+   16    3    2   13
+    5   10   11    8
+    9    6    7   12
+    4   15   14    1
+
+<span class="prompt_row">octave:3&gt; </span><span class="prompt_command">c=[4 2 -3;7 -7 9;3 -5 6]</span>
+c =
+
+   4   2  -3
+   7  -7   9
+   3  -5   6
+
+<span class="prompt_row">octave:4&gt; </span><span class="prompt_command">d=[6 3 2;2 12 -7;-1 6 2;-5 15 11]</span>
+d =
+
+    6    3    2
+    2   12   -7
+   -1    6    2
+   -5   15   11
+
+<span class="prompt_row">octave:5&gt; </span><span class="prompt_command">(3*a)-(5*c)</span>
+ans =
+
+  -41    5  -12
+  -29   32  -39
+  -12   22  -24
+
+<span class="prompt_row">octave:6&gt; </span><span class="prompt_command">(7*a)+(2*b)</span>
+<span class="prompt_error">error: operator +: nonconformant arguments (op1 is 3x3, op2 is 4x4)
+</span><span class="prompt_row">octave:7&gt; </span><span class="prompt_command">c*a</span>
+ans =
+
+  -27   21  -38
+  -54   33  -59
+  -25   14  -25
+
+<span class="prompt_row">octave:8&gt; </span><span class="prompt_command">c*d</span>
+<span class="prompt_error">error: operator *: nonconformant arguments (op1 is 3x3, op2 is 4x3)
+</span><span class="prompt_row">octave:9&gt; </span><span class="prompt_command">c*d'</span>
+ans =
+
+    24    53     2   -23
+    39  -133   -31   -41
+    15   -96   -21   -24
+
+<span class="prompt_row">octave:10&gt; </span><span class="prompt_command">zeros(4)</span>
+ans =
+
+   0   0   0   0
+   0   0   0   0
+   0   0   0   0
+   0   0   0   0
+
+<span class="prompt_row">octave:11&gt; </span><span class="prompt_command">zeros(3,4)</span>
+ans =
+
+   0   0   0   0
+   0   0   0   0
+   0   0   0   0
+
+<span class="prompt_row">octave:12&gt; </span><span class="prompt_command">ones(4)</span>
+ans =
+
+   1   1   1   1
+   1   1   1   1
+   1   1   1   1
+   1   1   1   1
+
+<span class="prompt_row">octave:13&gt; </span><span class="prompt_command">ones(3,4)</span>
+ans =
+
+   1   1   1   1
+   1   1   1   1
+   1   1   1   1
+
+<span class="prompt_row">octave:14&gt; </span><span class="prompt_command">side(d)</span>
+<span class="prompt_error">error: 'side' undefined near line 1, column 1
+</span><span class="prompt_row">octave:15&gt; </span><span class="prompt_command">size(d)</span>
+ans =
+
+   4   3
+
+<span class="prompt_row">octave:16&gt; </span><span class="prompt_command">zeros(size(d))</span>
+ans =
+
+   0   0   0
+   0   0   0
+   0   0   0
+   0   0   0
+
+<span class="prompt_row">octave:17&gt; </span><span class="prompt_command">diag([1 2 3 4])</span>
+ans =
+
+Diagonal Matrix
+
+   1   0   0   0
+   0   2   0   0
+   0   0   3   0
+   0   0   0   4
+
+<span class="prompt_row">octave:18&gt; </span><span class="prompt_command">eye(4)</span>
+ans =
+
+Diagonal Matrix
+
+   1   0   0   0
+   0   1   0   0
+   0   0   1   0
+   0   0   0   1
+
+<span class="prompt_row">octave:19&gt; </span><span class="prompt_command">[a,b]</span>
+<span class="prompt_error">error: horizontal dimensions mismatch (3x3 vs 4x4)
+</span><span class="prompt_row">octave:20&gt; </span><span class="prompt_command">[a;b]</span>
+<span class="prompt_error">error: vertical dimensions mismatch (3x3 vs 4x4)
+</span><span class="prompt_row">octave:21&gt; </span><span class="prompt_command">zeros(7,8)</span>
+ans =
+
+   0   0   0   0   0   0   0   0
+   0   0   0   0   0   0   0   0
+   0   0   0   0   0   0   0   0
+   0   0   0   0   0   0   0   0
+   0   0   0   0   0   0   0   0
+   0   0   0   0   0   0   0   0
+   0   0   0   0   0   0   0   0
+
+<span class="prompt_row">octave:22&gt; </span><span class="prompt_command">diag(5 5 5 5 5 5 5 5)</span>
+<span class="prompt_error">error: parse error:
+
+  syntax error
+
+&gt;&gt;&gt; diag(5 5 5 5 5 5 5 5)
+            ^
+</span><span class="prompt_row">octave:22&gt; </span><span class="prompt_command">diag([5 5 5 5 5 5 5 5])</span>
+ans =
+
+Diagonal Matrix
+
+   5   0   0   0   0   0   0   0
+   0   5   0   0   0   0   0   0
+   0   0   5   0   0   0   0   0
+   0   0   0   5   0   0   0   0
+   0   0   0   0   5   0   0   0
+   0   0   0   0   0   5   0   0
+   0   0   0   0   0   0   5   0
+   0   0   0   0   0   0   0   5
+
+<span class="prompt_row">octave:23&gt; </span><span class="prompt_command">a(2,:)</span>
+ans =
+
+   2  -1   2
+
+<span class="prompt_row">octave:24&gt; </span><span class="prompt_command">a(1,:)</span>
+ans =
+
+  -7   5  -9
+
+<span class="prompt_error">NOTICE: Due to inactivity, your session will expire in five minutes.
+</span></pre>
+						<!-- ko if: patreonValue() > 0 --><!-- /ko -->
+						
+						<div id="instructor-promo" aria-hidden="true">
+							<span class="l1">Did you know you can use Octave Online in your class?</span>
+							<span class="l2">Open a support ticket to inquire about how we can set you up as an instructor.</span>
+							<span class="l3" data-purpose="close">dismiss</span>
+						</div>
+						
+						<div id="cwd_box" style="display: none" data-bind="visible: !!cwd()">cwd: <span data-bind="text: cwd"></span></div>
+						<div id="type_here" aria-hidden="true">
+							<span class="l1">Octave Command Prompt</span>
+							<span class="l2">Type expressions here and press enter.</span>
+							<!-- ko ifnot: authUser() --><!-- /ko -->
+						</div>
+						<span id="plot_opener" aria-hidden="false" title="Expand Plot Window" data-bind="click: togglePlot"></span>
+						<a id="agpl_icon" title="Octave Online Server on GitHub" href="https://github.com/octave-online/octave-online-server" target="_blank" aria-hidden="true"><img src="./Octave Online · Cloud IDE compatible with MATLAB_files/agpl-logo.svg" alt="AGPL Free Software"></a>
+					</div>
+					<div id="console_prompt_container">
+
+						<div id="prompt_sign" aria-hidden="false">》</div>
+						<!--
+						NOTE: Removing this inline height style and moving it to CSS
+						will result in a race condition between Ace and the CSS file
+						being loaded.
+						-->
+						<div id="prompt" style="height: 27.6px;" aria-hidden="false" class=" ace_editor ace-crimson-editor"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; height: 17.6px; width: 9.8965px; left: 4px; top: 5px;"></textarea><div class="ace_gutter" style="display: none;"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 5px; height: 62.8px; width: 43px;"><div class="ace_gutter-cell " style="height: 17.6px;">1</div></div><div class="ace_gutter-active-line" style="top: 5px; height: 17.6px;"></div></div><div class="ace_scroller" style="left: 0px; right: 0px; bottom: 0px;"><div class="ace_content" style="margin-top: 5px; width: 446px; height: 62.8px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 795.72px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line_group" style="height:17.600000381469727px"><div class="ace_line" style="height:17.600000381469727px"></div></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="left: 4px; top: 0px; width: 9.8965px; height: 17.6px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 27.6px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px; left: 0px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 446px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div>
+
+						<div id="runtime_controls_container" aria-hidden="true">
+							<span id="signal" title="Stop Currently Running Command (send SIGINT)"></span>
+							<span id="seconds_remaining_container">
+								Seconds Remaining:
+								<span id="seconds_remaining">0</span>
+							</span>
+							<span id="add_time_container" aria-hidden="true">
+								<span class="clickable" data-bind="click: addTime">Add <span data-bind="text: countdownExtraTimeSeconds">15</span> Seconds</span>
+								<!-- ko if: (authUser() && (!authUser().patreon || !authUser().patreon.currently_entitled_tier)) -->
+								/ <span class="clickable" data-bind="click: showUpgradeTier">Upgrade</span>
+								<!-- /ko -->
+							</span>
+							<span id="payload_acknowledge_container" class="clickable" data-bind="click: acknowledgePayload" aria-hidden="true">Resume Execution</span>
+						</div>
+					</div>
+				<div class="handle" aria-hidden="false"></div></div>
+			</div>
+		</div>
+		<div id="main_menu" aria-hidden="false"><div id="main_menu_content">
+			
+				<div class="i18n-language-selector">
+					<span class="flaticon-i18n"></span>
+					<select data-bind="options: availableLanguages,
+						optionsText: function(lng) {
+							if (Intl.DisplayNames) {
+								return new Intl.DisplayNames(lng, { type: &#39;language&#39; }).of(lng);
+							} else {
+								return lng;
+							}
+						}, value: currentLanguage"><option value="bn">বাংলা</option><option value="en">English</option><option value="es">español</option><option value="hi">हिन्दी</option></select>
+				</div>
+			
+			<!-- ko if: (!authUser() && purpose() !== "student") --><!-- /ko -->
+			<!-- ko if: (authUser() && purpose() !== "student") -->
+				<div id="userbox">
+					<span data-bind="text: authUser().name">mena.makram1771@gmail.com</span>
+					<a id="logout_icon" href="javascript:void(0)" title="Sign Out" data-bind="click: doLogout">Sign Out</a>
+				</div>
+				<div class="site-control-item" data-bind="click: showUpgradeTier">
+					<a href="javascript:void(0)">Upgrade with Patreon</a>
+				</div>
+				<div class="share-url-box">
+					<!-- ko if: sharingEnabled --><!-- /ko -->
+					<!-- ko ifnot: sharingEnabled -->
+						<div class="site-control-item" data-bind="click: toggleSharing">
+							<!-- ko if: purpose() === "project" --><!-- /ko -->
+							<!-- ko if: purpose() !== "project" -->
+							<a href="javascript:void(0)" title="Enabling collaboration allows others to edit your home workspace in real time.">Enable Collaboration</a>
+							<!-- /ko -->
+						</div>
+					<!-- /ko -->
+				</div>
+				<div class="site-control-item" data-bind="click: showCreateNewProject">
+					<a href="javascript:void(0)">Create New Project</a>
+				</div>
+				<div class="site-control-item" id="create-password-btn" data-bind="click: showChangePassword">
+					<a href="javascript:void(0)">Change Password</a>
+				</div>
+			<!-- /ko -->
+			<!-- ko foreach: instructorPrograms --><!-- /ko -->
+			<div class="site-control-item" id="feedback-btn" data-bind="click: openUserVoice">
+				<a href="javascript:void(0)">Feedback and Support</a>
+			</div>
+			<div class="site-control-item">
+				<a id="showprivacy">Privacy Policy and EULA</a>
+			</div>
+			<div class="site-control-item">
+				<a href="https://github.com/octave-online/octave-online-server" target="_blank">GitHub Project</a>
+			</div>
+			<div class="site-control-item" id="change-skin">
+				<a href="javascript:void(0)">Change Theme</a>
+			</div>
+			<div class="site-control-item" id="reset-layout">
+				<a href="javascript:void(0)">Change/Reset Layout</a>
+			</div>
+			<div id="twitter-follow-holder" class="site-control-item">
+				<a href="https://twitter.com/OctaveOnline" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large" data-show-screen-name="false" target="_blank">Follow on Twitter</a>
+			</div>
+			<div class="preference-inline-item">
+				<label>
+					<input type="checkbox" data-bind="checked: inlinePlots">
+					Render New Plots Inline
+				</label>
+			</div>
+			<div class="preference-inline-item">
+				<label>
+					<input type="checkbox" data-bind="checked: consoleWhiteSpaceWrap">
+					Wrap Long Lines in Console
+				</label>
+			</div>
+			<!-- ko if: allBuckets().length > 0 -->
+				<div class="all-buckets">
+					<strong>Buckets and Projects:</strong>
+					<ul data-bind="foreach: allBuckets">
+						<li>
+							<a data-bind="click: deleteit" title="Delete Bucket/Project" class="bucket-delete">⌫</a>
+							<!-- ko if: butype() === "readonly" --><!-- /ko -->
+							<!-- ko ifnot: butype() === "readonly" -->
+							<span class="bucket-icon-project" title="Project"></span>
+							<!-- /ko -->
+
+							<a data-bind="attr: { href: url }" target="_blank" class="bucket-name" href="https://octave-online.net/project~W7829QKWNABjQjrC2nahw3"><span class="bucket-shortlink-prefix">octav.onl/</span><span class="bucket-shortlink-suffix" data-bind="text: shortlink">rtsml199</span></a>
+							<br>
+							<span data-bind="text: createdTimeString" class="bucket-time">10/29/2021, 6:17:33 PM</span>
+						</li>
+					</ul>
+				</div>
+			<!-- /ko -->
+			<div id="footnotes">
+				Icons made by <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu" target="_blank">Bogdan Rosu</a>, <a href="http://www.flaticon.com/authors/daniel-bruce" title="Daniel Bruce" target="_blank">Daniel Bruce</a>, <a href="http://www.flaticon.com/authors/sarfraz-shoukat" title="Sarfraz Shoukat" target="_blank">Sarfraz Shoukat</a>, <a href="http://www.flaticon.com/authors/icomoon" title="Icomoon" target="_blank">Icomoon</a>, <a href="http://www.flaticon.com/authors/freepik" title="Freepik" target="_blank">Freepik</a>, <a href="http://www.flaticon.com/authors/icon-works" title="Icon Works" target="_blank">Icon Works</a>, <a href="http://www.flaticon.com/authors/plainicon" title="Plainicon" target="_blank">Plainicon</a>, and <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon" target="_blank">SimpleIcon</a> are from <a href="http://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> and licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC BY 3.0</a>.
+			</div>
+		</div></div>
+	</section>
+</div>
+
+
+<div id="onboarding" data-purpose="popover" aria-hidden="true" style=""><div><div>
+	<h2>Welcome to Octave Online</h2>
+
+	<p>
+		Octave Online is a web UI for GNU Octave, the open-source alternative to MATLAB.  Thousands of students, educators, and researchers from around the world use Octave Online each day for studying machine learning, control systems, numerical methods, and more.
+	</p>
+	<figure>
+		<figcaption>
+			Type commands in the prompt like you would in your local copy of GNU Octave or MATLAB.
+		</figcaption>
+		<img src="./Octave Online · Cloud IDE compatible with MATLAB_files/fminbnd-prompt.png" alt="fminbnd(@(x) x .* log(x), 0, 1)" style="max-width: 362px;">
+		<img src="./Octave Online · Cloud IDE compatible with MATLAB_files/fminbnd-result.png" alt="0.36788" style="max-width: 366px;">
+	</figure>
+	<figure>
+		<figcaption>
+			Plot charts and graphs.
+		</figcaption>
+		<img src="./Octave Online · Cloud IDE compatible with MATLAB_files/sombrero-prompt.png" alt="sombrero()" style="max-width: 150px;">
+		<img src="./Octave Online · Cloud IDE compatible with MATLAB_files/sombrero-result.jpg" alt="plot showing a sombrero" style="max-width: 531px;">
+	</figure>
+	<figure>
+		<figcaption>
+			Sign in for more features: script files, buckets, real-time collaboration like Google Docs, extended runtime, and more.
+		</figcaption>
+		<img src="./Octave Online · Cloud IDE compatible with MATLAB_files/editor.png" alt="cstr_reactor.m">
+	</figure>
+	<button id="onboarding-start" data-purpose="close">Start Using Octave Online</button>
+	<span class="closebtn" data-purpose="close"></span>
+</div></div></div>
+
+
+<div id="announcement-box" data-purpose="popover" data-announcement-display="off" aria-hidden="true"><div><div>
+	<p>Octave Online is currently undergoing planned maintenance; service may be intermittent.</p>
+<p>Tip: For the latest updates on Octave Online server status, check our Twitter feed <a href="https://twitter.com/OctaveOnline" target="_blank">@OctaveOnline</a>.</p>
+	<span class="closebtn" data-purpose="close"></span>
+</div></div></div>
+
+<div id="welcome_back" data-purpose="popover" aria-hidden="true"><div><div>
+	<h2 class="popover-title-bar">
+		Welcome Back!
+	</h2>
+	<p>It has been a while since you've visited Octave Online. You have a clean workspace for a fresh start. To restore your data from last time, please contact support using the button in the menu.</p>
+	<button data-purpose="close">OK</button>
+	<span class="closebtn" data-purpose="close"></span>
+</div></div></div>
+
+<div id="privacy" data-purpose="popover" aria-hidden="true"><div><div>
+	<article>Privacy Policy
+==============
+
+Octave Online LLC values the privacy of our users.  In order to provide excellent software, we collect and save the following information:
+
+- Scripts and other files you upload to or edit in Octave Online.
+- Historical transcripts of Octave commands and output, which may be associated with your account or IP address.
+- When using Email Sign In: your email address.
+- When using Google+ Sign In: your email address, name, and basic Google account information, including gender and locale.
+
+The above information is stored on Google Cloud Platform based on Council Bluffs, Iowa, USA.  Additional copies of the data may be stored as backups in other physical locations and not necessarily in the Rackspace network.  The information may be stored indefinitely.
+
+Deleting a file from your account on your own may not constitute full deletion from our servers.  To inquire about full deletion, open a support ticket or send an email as described below.
+
+Your activity in Octave Online is recorded by Google Analytics.  Google Analytics may use Google AdSense cookies in your browser to record demographics about the users of Octave Online, including, but not limited to, age and gender.  Note that this information is NOT personally identifiable.  You may opt out from Google Analytics by following the instructions on the following URL.
+
+https://tools.google.com/dlpage/gaoptout/
+
+California Consumer Privacy Act (“CCPA”): Under CCPA, Californian residents have the right to declare their preferences on the sale of data for advertising and marketing purposes. If you wish to change your preferences, click this link to launch our preference portal:
+
+<div data-fuse-privacy-tool="">You are outside the CCPA jurisdiction.</div>
+
+We use a third-party to provide monetisation technologies for our site. You can review their privacy and cookie policy here:
+
+https://www.publift.com/privacy-policy
+
+Unless required by law, we do not give or sell personally identifiable information to third parties. 
+
+If your email address changes, you may open a support ticket asking to restore access to your account.  We will ask you questions about your old account to verify your identity.
+
+Octave Online LLC reserves the right to send you email announcements about Octave Online.  Such announcements will be released only for major updates and reports.
+
+Octave Online LLC may also save cookies to your computer.  These cookies help us keep you logged in during a session and between sessions.  Disabling cookies will limit the features we are able to provide.
+
+To inquire about accessing or deleting personal data, or to ask questions about the privacy policy, you can (1) open a support ticket at https://octaveonline.uservoice.com, or (2) send an email to support@octave-online.net.
+
+
+
+End User License Agreement (last updated January 2, 2015)
+=========================================================
+
+This copy of Octave Online ("the Software Product") and accompanying documentation is licensed and not sold. This Software Product is protected by copyright laws and treaties, as well as laws and treaties related to other forms of intellectual property. Octave Online LLC or its subsidiaries, affiliates, and suppliers (collectively "Octave Online") own intellectual property rights in the Software Product. The Licensee's ("you" or "your") license to download, use, copy, or change the Software Product is subject to these rights and to all the terms and conditions of this End User License Agreement ("Agreement"). 
+&nbsp; 
+Acceptance 
+YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT BY USING, DOWNLOADING, COPYING, OR REPRODUCING THE SOFTWARE. IF YOU DO NOT AGREE TO ALL OF THE TERMS OF THIS AGREEMENT, YOU MUST IMMEDIATELY CEASE ALL USE OF THE SOFTWARE.
+&nbsp; 
+Restrictions on Alteration 
+You may not modify the Software Product or create any derivative work of the Software Product or its accompanying documentation without written consent of Octave Online. Derivative works include but are not limited to translations. You may not alter any files or libraries in any portion of the Software Product. You may not reproduce the database portion or create any tables or reports relating to the database portion. 
+&nbsp; 
+Restrictions on Copying 
+You may not copy any part of the Software Product except to the extent that licensed use inherently demands the creation of a temporary copy stored in computer memory and not permanently affixed on storage medium. You may make one archival copy which must be stored on a medium other than a computer hard drive. 
+&nbsp; 
+Disclaimer of Warranties and Limitation of Liability 
+UNLESS OTHERWISE EXPLICITLY AGREED TO IN WRITING BY OCTAVE ONLINE, OCTAVE ONLINE MAKES NO OTHER WARRANTIES, EXPRESS OR IMPLIED, IN FACT OR IN LAW, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OTHER THAN AS SET FORTH IN THIS AGREEMENT OR IN THE LIMITED WARRANTY DOCUMENTS PROVIDED WITH THE SOFTWARE PRODUCT. 
+&nbsp; 
+Octave Online makes no warranty that the Software Product will meet your requirements or operate under your specific conditions of use. Octave Online makes no warranty that operation of the Software Product will be secure, error free, or free from interruption. YOU MUST DETERMINE WHETHER THE SOFTWARE PRODUCT SUFFICIENTLY MEETS YOUR REQUIREMENTS FOR SECURITY AND UNINTERRUPTABILITY. YOU BEAR SOLE RESPONSIBILITY AND ALL LIABILITY FOR ANY LOSS INCURRED DUE TO FAILURE OF THE SOFTWARE PRODUCT TO MEET YOUR REQUIREMENTS. OCTAVE ONLINE WILL NOT, UNDER ANY CIRCUMSTANCES, BE RESPONSIBLE OR LIABLE FOR THE LOSS OF DATA ON ANY COMPUTER OR INFORMATION STORAGE DEVICE. 
+&nbsp; 
+UNDER NO CIRCUMSTANCES SHALL OCTAVE ONLINE, ITS DIRECTORS, OFFICERS, EMPLOYEES OR AGENTS BE LIABLE TO YOU OR ANY OTHER PARTY FOR INDIRECT, CONSEQUENTIAL, SPECIAL, INCIDENTAL, PUNITIVE, OR EXEMPLARY DAMAGES OF ANY KIND (INCLUDING LOST REVENUES OR PROFITS OR LOSS OF BUSINESS) RESULTING FROM THIS AGREEMENT, OR FROM THE FURNISHING, PERFORMANCE, INSTALLATION, OR USE OF THE SOFTWARE PRODUCT, WHETHER DUE TO A BREACH OF CONTRACT, BREACH OF WARRANTY, OR THE NEGLIGENCE OF OCTAVE ONLINE OR ANY OTHER PARTY, EVEN IF OCTAVE ONLINE IS ADVISED BEFOREHAND OF THE POSSIBILITY OF SUCH DAMAGES. TO THE EXTENT THAT THE APPLICABLE JURISDICTION LIMITS OCTAVE ONLINE'S ABILITY TO DISCLAIM ANY IMPLIED WARRANTIES, THIS DISCLAIMER SHALL BE EFFECTIVE TO THE MAXIMUM EXTENT PERMITTED. 
+&nbsp; 
+Limitation of Remedies and Damages 
+Your remedy for a breach of this Agreement or of any warranty included in this Agreement is the correction or replacement of the Software Product. Selection of whether to correct or replace shall be solely at the discretion of Octave Online. Octave Online reserves the right to substitute a functionally equivalent copy of the Software Product as a replacement. If Octave Online is unable to provide a replacement or substitute Software Product or corrections to the Software Product, your sole alternate remedy shall be a refund of the purchase price for the Software Product exclusive of any costs for shipping and handling. 
+&nbsp; 
+Any claim must be made within the applicable warranty period. All warranties cover only defects arising under normal use and do not include malfunctions or failure resulting from misuse, abuse, neglect, alteration, problems with electrical power, acts of nature, unusual temperatures or humidity, improper installation, or damage determined by Octave Online to have been caused by you. All limited warranties on the Software Product are granted only to you and are non-transferable. You agree to indemnify and hold Octave Online harmless from all claims, judgments, liabilities, expenses, or costs arising from your breach of this Agreement and/or acts or omissions. 
+&nbsp; 
+Governing Law, Jurisdiction and Costs 
+This Agreement is governed by the laws of Missouri, without regard to Missouri's conflict or choice of law provisions. 
+&nbsp; 
+Severability 
+If any provision of this Agreement shall be held to be invalid or unenforceable, the remainder of this Agreement shall remain in full force and effect. To the extent any express or implied restrictions are not permitted by applicable laws, these express or implied restrictions shall remain in force and effect to the maximum extent permitted by such applicable laws.
+
+</article>
+	<span class="closebtn" data-purpose="close"></span>
+</div></div></div>
+
+<div id="email_token" data-purpose="popover" aria-hidden="true"><div><div>
+	<label for="emailField">Enter your email address:</label>
+	<form action="https://octave-online.net/auth/tok" method="post">
+		<input type="email" id="emailField1" name="s" placeholder="email address">
+		<input type="password" id="passwordField1" name="p">
+		<div class="g-recaptcha" data-sitekey="6Le4RuMUAAAAAH4hMfoaR5tsj0cI25GVfc6wOvW_"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="./Octave Online · Cloud IDE compatible with MATLAB_files/anchor.html" width="304" height="78" role="presentation" name="a-wyzye27ytd62" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./Octave Online · Cloud IDE compatible with MATLAB_files/saved_resource.html"></iframe></div>
+		<input type="submit" value="Submit">
+	</form>
+	<p>You will be emailed an 11-digit code that you will need to enter on the next screen. If you do not receive your code, please open a support ticket for assistance.</p>
+	<span class="closebtn" data-purpose="close"></span>
+</div></div></div>
+
+<div id="email_password" data-purpose="popover" aria-hidden="true"><div><div>
+	<p><strong>New user? Forgot your password?</strong> Use the "email token" sign-in option instead. Once you are signed in, use the "Change Password" option in the menu to set a new password.</p>
+	<form action="https://octave-online.net/auth/pwd" method="post">
+		<input type="email" id="emailField2" name="s" placeholder="email address">
+		<input type="password" name="p" placeholder="password">
+		<!-- <div class="g-recaptcha" data-sitekey="6Le4RuMUAAAAAH4hMfoaR5tsj0cI25GVfc6wOvW_"></div> -->
+		<!-- ko if: window.location.protocol === "http:" --><!-- /ko -->
+		<input type="submit" value="Submit">
+	</form>
+	<span class="closebtn" data-purpose="close"></span>
+</div></div></div>
+
+<div id="change_password" data-purpose="popover" aria-hidden="true"><div><div>
+	<h2 class="popover-title-bar">
+		Change Password
+	</h2>
+	<p>Enter your new password below.  To remove your password and disable password-based logins, leave the password field blank and click "Save Password".</p>
+	<input type="password" id="new_pwd" placeholder="password">
+	<!-- ko if: window.location.protocol === "http:" --><!-- /ko -->
+	<button id="save-password-btn">Save Password</button>
+	<span class="closebtn" data-purpose="close"></span>
+</div></div></div>
+
+<div id="bucket_info" data-purpose="popover" aria-hidden="true"><div><div>
+	<!-- ko with: currentBucket --><!-- /ko -->
+	<span class="closebtn" data-purpose="close"></span>
+</div></div></div>
+
+<div id="create_bucket" data-purpose="popover" aria-hidden="true"><div><div>
+	<!-- ko with: newBucket --><!-- /ko -->
+	<span class="closebtn" data-purpose="close" data-bind="click: clearBucket"></span>
+</div></div></div>
+
+<div id="upgrade_to_tier" data-purpose="popover" aria-hidden="true"><div><div>
+	<h2 class="popover-title-bar">
+		Upgrade Account
+	</h2>
+	<!-- ko ifnot: authUser --><!-- /ko -->
+	<!-- ko with: authUser -->
+	<!-- ko ifnot: $data.patreon -->
+	<p class="action-links">
+		<a href="https://octave-online.net/auth/patreon/plans" target="_blank">View Plans</a> / <a href="https://octave-online.net/auth/patreon">Link Patreon Account</a>
+	</p>
+	<!-- /ko -->
+	<!-- ko if: $data.patreon --><!-- /ko -->
+	<!-- /ko -->
+	<p>
+		Each week, Octave Online connects tens of thousands of students, educators, and researchers in over 100 countries.  We have no paywall.  If you believe in our mission to provide educational software free of charge, please join us by supporting Octave Online on Patreon.
+	</p>
+	<span class="closebtn" data-purpose="close"></span>
+</div></div></div>
+
+<div id="file_history_box" data-purpose="popover" aria-hidden="true"><div><div>
+	<h2 class="popover-title-bar">
+		File History
+	</h2>
+	<!-- ko if: purpose() !== "project" -->
+	<h3>Version Control</h3>
+	<p>
+		Revisions to your files are tracked by a Git version control system.
+	</p>
+	<button data-bind="click: openGit">Launch Version Control</button>
+	<!-- /ko -->
+	<h3>Download Snapshot</h3>
+	<p>
+		To request a ZIP file snapshot sent to your email, click the link below. Note: If you edited your files this session, click the "Refresh Files" button first to ensure you receive the most up-to-date snapshot.
+	</p>
+	<button data-bind="click: generateZip">Generate ZIP Archive</button>
+	<span class="closebtn" data-purpose="close"></span>
+</div></div></div>
+
+<div id="site_loading" aria-hidden="true" style="">
+	<div id="cosine-pulse"></div>
+	<div id="site_loading_patience" class="patience" aria-hidden="true">Hmm, looks like the server is busy today!  We'll get you connected before you know it.  Thanks for your patience.</div>
+	<div id="site_loading_more_patience" class="patience" aria-hidden="true">Thanks for waiting.  It's not supposed to take this long.  Please double-check your internet connection.  If you are sure that your internet is working, consider contacting support.</div>
+</div>
+
+
+<div id="sync-promo" aria-hidden="false" style="left: 74.275px;">
+	<span class="l1">View historical versions of your script files!</span>
+	<span class="l2">Click the icon for more info.</span>
+	<span class="l3" data-purpose="close">dismiss</span>
+</div>
+<div id="create-bucket-promo" aria-hidden="true">
+	<span class="l1">Share snapshots of your script files!</span>
+	<span class="l2">Click the icon to create a new bucket.</span>
+	<span class="l3" data-purpose="close">dismiss</span>
+</div>
+<div id="share-promo" aria-hidden="true" style="">
+	<span class="l0">Tip:</span>
+	<span class="l1">Enable collaboration to allow others to edit your script files in real time, like Google Docs.</span>
+	<span class="l3" data-purpose="close">dismiss</span>
+</div>
+<div id="login-promo" aria-hidden="true">
+	<span class="l1">Want to use scripts?</span>
+	<span class="l3">Sign in to create and share script files.</span>
+	<span class="l4" data-purpose="close">dismiss</span>
+</div>
+<div id="bucket-promo" aria-hidden="true">
+	<span class="l1">Sign in to create your own buckets and use the rest of Octave Online.</span>
+	<span class="l2" data-purpose="close">dismiss</span>
+</div>
+
+
+<script type="text/javascript">
+window.oo_translations = {"buckets.error1":"Error: invalid short link. Use at least 5 letters, numbers, -, and _.","buckets.error2":"Error: That short link is already taken. Please try again.","buckets.label1":"Enter a new short link:","console.exited#alert":"Octave Exited. Message:","console.payload#alert":"NOTICE: Execution paused due to large payload","console.pingtime#label":"Ping time:","console.plotwindow#alert":"This button shows and hides the plot window.  Enter an expression that generates a plot.","console.readonly#alert":"Note: This is a read-only bucket. Changes you make will not be persisted after you close your browser window.","console.readonly#alert@2":"Note: This is a read-only bucket; your edits are temporary. To make your edits permanent, fork the bucket by clicking the bucket name:","console.reconnect#btn":"Click Here to Reconnect","console.reconnecting#alert":"Connection lost.  Attempting to reconnect...","console.refresh#alert":"This will reload your files from the server. Any unsaved changes will be lost.","console.seeurl#label":"See:","newfile.helloworld":"Hello World","newfile.label":"Please enter a filename:","print.p1":"Printed for:","print.p2":"Powered by Octave Online","rename.alert":"The specified filename already exists.","rename.label":"Enter a new filename:","students.course#label":"Course:","students.enroll.p1":"You need to sign in to enroll in a course.","students.enroll.p2":"When you enroll in a course, the instructors for that course will be able to access the files you save. You can cancel your enrollment at any time by running running the following at the command prompt.","students.enroll.p3":"Press Cancel if you don't know what any of this means.","students.name#label":"Name:","students.reenroll.p1":"Enter the course code to which you want to move this student:","students.reenroll.p2":"The following student is being re-enrolled.  Reload the page to see the update.","students.reenroll.p3":"Error: Could not find the course code:","students.unenroll.p1":"Are you sure that you want to remove the following student from your course?","togglesharing.p1":"You cannot disable sharing as a student enrolled in an Octave Online course code:","togglesharing.p2":"You need to remove yourself by running this command at at the command prompt:","common.bucket":"Bucket","common.caution#label":"Caution:","common.dismiss#btn":"dismiss","common.email#ph":"email address","common.https#btn":"Switch to a secured connection (https)","common.https#p":"You are using an unsecured connection (http). People might be able to see what you submit.","common.loading#ui":"Loading…","common.loginrequired":"Please sign in to perform this action","common.password#ph":"password","common.project":"Project","common.submit#btn":"Submit","constants.shortlink_prefix":"https://octav.onl/"};
+window.oo_currentLanguage = "en";
+window.oo_availableLanguages = ["bn","en","es","hi"];
+</script>
+
+
+<script type="text/javascript" src="./Octave Online · Cloud IDE compatible with MATLAB_files/require.js.download"></script>
+
+
+<script type="text/javascript">
+require.config({
+	urlArgs: "1633497176209",
+	waitSeconds: 0
+});
+require(["js/app"], function(){
+	require(["js/runtime"]);
+//var OctMethods = require("js/client"); OctMethods.console.writeError("NOTICE: Announcement Here\n\n\n\n\n\n\n\n\n\n");
+// var OctMethods = require("js/client"); OctMethods.console.writeUrl("/auth/patreon"); OctMethods.console.write("\n\n\n\n\n\n\n\n\n\n");
+});
+</script><iframe src="./Octave Online · Cloud IDE compatible with MATLAB_files/container(1).html" style="visibility: hidden; display: none;"></iframe>
+</div>
+
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="./Octave Online · Cloud IDE compatible with MATLAB_files/bframe.html" name="c-wyzye27ytd62" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div><iframe name="__tcfapiLocator" style="display: none;" src="./Octave Online · Cloud IDE compatible with MATLAB_files/saved_resource(1).html"></iframe><iframe src="./Octave Online · Cloud IDE compatible with MATLAB_files/syncframe.html" id="criteo-syncframe-pbt" style="display: none;"></iframe><iframe src="./Octave Online · Cloud IDE compatible with MATLAB_files/aframe.html" width="0" height="0" style="display: none;"></iframe><input type="file" id="siofu_input" style="display: none;"></body><iframe sandbox="allow-scripts allow-same-origin" id="77a6ff807786b4d" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Octave Online · Cloud IDE compatible with MATLAB_files/usync.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="76c5e4b8a092ee4" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Octave Online · Cloud IDE compatible with MATLAB_files/ixmatch.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="7558d82c1539f9e" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Octave Online · Cloud IDE compatible with MATLAB_files/sync.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="74cd75a95503dcd" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Octave Online · Cloud IDE compatible with MATLAB_files/showad.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="739f3150a790beb" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Octave Online · Cloud IDE compatible with MATLAB_files/connectmyusers.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="72f8c52441c6ab9" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Octave Online · Cloud IDE compatible with MATLAB_files/pd.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="71343c4dfffb227" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Octave Online · Cloud IDE compatible with MATLAB_files/saved_resource(2).html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="70ec1a506f2edde" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Octave Online · Cloud IDE compatible with MATLAB_files/async_usersync.html">
+    </iframe><div id="smartyContainer" style="position: absolute; top: 0px; right: 0px; line-height: initial; z-index: 2147483647; width: auto; font-size: initial;"></div></html>
